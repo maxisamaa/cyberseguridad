@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica responsiva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!--jquery-->
+    <link rel="stylesheet" href="css/finportafolio.css"><!--css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--fuentee google-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet"> <!--fuente google-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /><!--iconos-->
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Informate sobre Ciberseguridad!</h1>
+        <nav>
+            <ul>
+                <li><a href="finportafolio.html">Inicio</a></li>
+                <li><a href="finportafolio2.html">Amenazas comunes</a></li>
+                <li><a href="finportafolio3.html">Consejos de seguridad</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5">
+                <!-- Carrusel -->
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <a href="finportafolio3.html">
+                            <img src="img3/consejos.png" class="d-block w-100" alt="...">
+                            </a>
+                            </div>
+                            <div class="carousel-item">
+                            <a href="finportafolio.html">
+                            <img src="img3/inicio.png" class="d-block w-100" alt="...">
+                            </a>
+                            </div><!--aca-->
+                            <div class="carousel-item">
+                            <a href="finportafolio2.html">
+                            <img src="img3/amenazas.png" class="d-block w-100" alt="...">
+                            </a>
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                </div>
+            </div>
+
+      <!-- TEXTO DEBAJO DEL CARRUSEL -->
+            <div class="col-12 mt-4 mb-2 p-3">
+             <h1>Consejos.</h1>
+             </div>
+
+            <div class="col-8 m-2 p-3">
+                <ul>
+                    <li class="mb-5">
+                    <p class="text fs-5">Usa contraseñas seguras y únicas combinando mayúsculas, minúsculas, números y símbolos, y no las repitas en distintas cuentas.</p>
+                    </li>
+                    <li class="mb-5">
+                    <p class="text fs-5">Activa la autenticación de dos factores (2FA) en tus cuentas importantes para añadir un nivel extra de protección.</p>
+                    </li>
+                    <li class="mb-5">
+                    <p class="text fs-5">Mantén actualizado el sistema operativo, el navegador y las aplicaciones para reducir vulnerabilidades de seguridad.</p>
+                    </li>
+                    <li class="mb-5">
+                    <p class="text fs-5">Evita usar redes Wi-Fi públicas para acceder a información sensible; utiliza VPN si es necesario.</p>
+                    </li>
+                    <li class="mb-5">
+                    <p class="text fs-5">No abras enlaces ni archivos adjuntos de remitentes desconocidos o sospechosos sin confirmar su origen.</p>
+                    </li>
+                    <li class="mb-5">
+                    <p class="text fs-5">Verifica siempre la URL de los sitios antes de ingresar datos personales o bancarios para evitar páginas falsas.</p>
+                    </li>
+                    <li class="mb-5">
+                    <p class="text fs-5">Usa un software antivirus y antimalware confiable y mantenlo actualizado.</p>
+                    </li>
+                    <li class="mb-5">
+                    <p class="text fs-5">Evita compartir información personal o sensible en redes sociales o foros públicos.</p>
+                    </li>
+                    <li class="mb-5">
+                    <p class="text fs-5">Realiza respaldos periódicos de archivos importantes en discos externos o la nube para prevenir pérdidas o secuestro de datos.</p>
+                    </li>
+                    <li class="mb-5">
+                    <p class="text fs-5">Configura la privacidad de tus redes sociales para que solo personas de confianza vean tu información personal.</p>
+                    </li>
+                    <li class="mb-5">
+                    <p class="text fs-5">Desconfía de ofertas y premios que no esperabas y que parezcan demasiado buenos para ser reales.</p>
+                    </li>
+                    <li class="mb-5">
+                    <p class="text fs-5">Cierra sesión siempre en dispositivos compartidos o públicos para evitar accesos no autorizados a tus cuentas.</p>
+                    </li>
+                </ul>
+                <div class="col-12">
+                    <form id="formularioReserva">
+                        <h1>Quieres mas informacion?Cuentanos tus dudas!</h1>
+                        <div>
+                            <label for="peliculaNombre">Nombres</label>
+                            <input type="text" id="peliculaNombre" name="pelicula" required/>
+                        </div>
+                        <div>
+                            <label for="peliculaNombre">Apellidos</label>
+                            <input type="text" id="peliculaNombre" name="pelicula" required/>
+                        </div>
+                        <div>
+                            <label id="correo">Ingresa tu correo</label>
+                            <input type="text" id="correo" placeholder="usuario@seguridadinformatica.com" required />
+                        </div>
+                        <div class="botones-formulario">
+                                <button type="submit" class="confirmar">Enviar</button>
+                        </div>
+                    </form>
+                    <div class="container">
+                        <div class="row"></div>
+                        <div class="col-6 mx-auto">
+                            <div class="card text-bg-success text-center" id="tarjeta" style="max-width: auto;">
+                            <div class="card-header"><strong> Hecho!</strong></div>
+                            <div class="card-body">
+                                <h5 class="card-title">nlahblah</h5>
+                                <p class="card-text">yuhuhu</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="test"> Test De Seguridad.</h2>
+            <button class="reservar-btn"id="boton" >Desafio</button>
+            </div>
+        </div> 
+    </div> 
+
+    <!--modal -->
+    <div class="modal"> <!-- abarca toda la pantalla y la pone gris-->
+        <div class="formularito"> <!-- abarca  el formulario -->
+          <header><h2>Test De seguridad</h2>
+            <span class="close">x</span></header>
+          <main>
+            <form id="testSeguridad">
+                <div class="mb-4">
+                    <label><strong>1. ¿Qué es el phishing?</strong></label><br>
+                    <input type="radio" name="pregunta1" value="a" id="p1a" required>
+                    <label for="p1a">Un tipo de malware que secuestra archivos</label><br>
+                    <input type="radio" name="pregunta1" value="b" id="p1b">
+                    <label for="p1b">Un ataque de denegación de servicio masivo</label><br>
+                    <input type="radio" name="pregunta1" value="c" id="p1c">
+                    <label for="p1c">Una técnica para engañar usuarios y robar datos personales</label><br>
+                    <input type="radio" name="pregunta1" value="d" id="p1d">
+                    <label for="p1d">Un programa que protege contra virus</label><br>
+                </div>
+
+                <div class="mb-4">
+                    <label><strong>2. ¿Cuál es un consejo importante para evitar ataques de ransomware?</strong></label><br>
+                    <input type="radio" name="pregunta2" value="a" id="p2a" required>
+                    <label for="p2a">Usar la misma contraseña en todas las cuentas</label><br>
+                    <input type="radio" name="pregunta2" value="b" id="p2b">
+                    <label for="p2b">Mantener el sistema y programas actualizados</label><br>
+                    <input type="radio" name="pregunta2" value="c" id="p2c">
+                    <label for="p2c">Desactivar el antivirus para mayor velocidad</label><br>
+                    <input type="radio" name="pregunta2" value="d" id="p2d">
+                    <label for="p2d">Conectarse a redes Wi-Fi públicas sin precaución</label><br>
+                </div>
+
+                <div class="mb-4">
+                    <label><strong>3. ¿Cuál de las siguientes es una característica de un ataque DDoS?</strong></label><br>
+                    <input type="radio" name="pregunta3" value="a" id="p3a" required>
+                    <label for="p3a">Envía correos falsos para robar credenciales</label><br>
+                    <input type="radio" name="pregunta3" value="b" id="p3b">
+                    <label for="p3b">Secuestra archivos y pide rescate</label><br>
+                    <input type="radio" name="pregunta3" value="c" id="p3c">
+                    <label for="p3c">Infecta el sistema y crea copias de sí mismo</label><br>
+                    <input type="radio" name="pregunta3" value="d" id="p3d">
+                    <label for="p3d">Satura un servidor o página web con tráfico masivo para dejarla inoperativa</label><br>
+                </div>
+                <div class="botones-formulario">
+                <button type="submit" class="confirmar">Enviar Test</button>
+                </div>
+            </form>
+          </main>
+        </div>
+    </div>
+</main>
+
+
+    <script src="script/finportafolio.js"></script> 
+</body>
+</html>

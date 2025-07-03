@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica responsiva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!--jquery-->
+    <link rel="stylesheet" href="css/finportafolio.css"><!--css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--fuentee google-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet"> <!--fuente google-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /><!--iconos-->
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Informate sobre Ciberseguridad!</h1>
+        <nav>
+            <ul>
+                <li><a href="finportafolio.html">Inicio</a></li>
+                <li><a href="finportafolio2.html">Amenazas comunes</a></li>
+                <li><a href="finportafolio3.html">Consejos de seguridad</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+     <div class="container">
+        <div class="row">
+        <div class="col-12 mt-5">
+        <!-- Carrusel -->
+            <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <a href="finportafolio2.html">
+                <img src="img3/amenazas.png" class="d-block w-100" alt="...">
+                </a>
+                </div>
+                <div class="carousel-item">
+                <a href="finportafolio3.html">
+                <img src="img3/consejos.png" class="d-block w-100" alt="...">
+                </a>
+                </div><!--aca-->
+                <div class="carousel-item">
+                <a href="finportafolio.html">
+                <img src="img3/inicio.png" class="d-block w-100" alt="...">
+                </a>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+      <!-- TEXTO DEBAJO DEL CARRUSEL -->
+            <div class="col-12 mt-4 mb-2 p-3">
+             <h1>Amenazas Comunes.</h1>
+             </div>
+                <div class="col-12">
+                    <div class="card text-bg-primary mb-3">
+                        <div class="card-header">Phishing</div>
+                        <div class="card-body">
+                            <p class="card-text">El phishing es una técnica de ingeniería social utilizada por ciberdelincuentes para engañar a usuarios y obtener información confidencial como contraseñas datos bancarios o credenciales de acceso normalmente suplantando la identidad de instituciones confiables como bancos servicios de correo o plataformas digitales los atacantes envían correos electrónicos o mensajes con enlaces a páginas falsas que imitan el diseño oficial y una vez que el usuario introduce sus datos en estas páginas los delincuentes los capturan y utilizan para realizar fraudes financieros robo de identidad o comprometer redes corporativas este ataque depende de la confianza del usuario y su falta de verificación rigurosa de remitentes</p>
+                        </div>
+                        </div>
+
+                </div>
+                <div class="col-12"> 
+                    <div class="card text-bg-warning mb-3">
+                        <div class="card-header">Ransomware</div>
+                        <div class="card-body">
+                            <p class="card-text">El ransomware es un tipo de malware que cifra los archivos de la víctima impidiendo su acceso y exigiendo un rescate económico generalmente en criptomonedas para devolver el acceso a los datos se propaga mediante correos electrónicos fraudulentos descargas inseguras o vulnerabilidades en software una vez instalado el ransomware ejecuta algoritmos de cifrado robustos dejando un mensaje de advertencia con las instrucciones para pagar el rescate y amenazas de eliminación permanente de los archivos si no se paga la cantidad requerida las organizaciones que no cuentan con copias de seguridad actualizadas son especialmente vulnerables a estos ataques que pueden paralizar sus operaciones por completo</p>
+                        </div>
+                        </div>
+
+                </div>
+                <div class="col-12">
+                    <div class="card text-bg-danger mb-3">
+                        <div class="card-header">Malware</div>
+                        <div class="card-body">
+                            <h5 class="card-title">El malware es un término general que abarca todo software malicioso diseñado para dañar infectar o explotar dispositivos sistemas o redes su propósito puede ser variado desde el robo de datos personales y bancarios hasta el espionaje o el secuestro de recursos computacionales para minería de criptomonedas incluye virus troyanos gusanos spyware y ransomware entre otros su infección ocurre mediante descargas de software no confiable correos con archivos adjuntos maliciosos o acceso físico al dispositivo el malware puede permanecer oculto largo tiempo recopilando información sin que el usuario lo note o provocar daños inmediatos comprometiendo la integridad y seguridad informática</p>
+                        </div>
+                        </div>
+
+                </div>
+                <div class="col-12">
+                    <div class="card text-bg-success mb-3">
+                        <div class="card-header">Ataque DDoS</div>
+                        <div class="card-body">
+                            <p class="card-text">Los ataques DDoS consisten en la saturación de un servidor servicio o red a través del envío masivo de solicitudes provenientes de múltiples equipos distribuidos normalmente computadoras infectadas y convertidas en bots controlados por el atacante el objetivo es agotar los recursos de la víctima impidiendo que los usuarios legítimos puedan acceder al servicio provocando así su caída temporal o total estos ataques no necesariamente buscan robar información sino generar daño económico o reputacional a la víctima interrumpiendo su disponibilidad en línea pueden dirigirse a páginas web aplicaciones corporativas o infraestructuras críticas generando pérdidas económicas significativas si no se mitigan adecuadamente</p>
+                        </div>
+                        </div>
+
+                </div>
+                <div>
+
+                </div>
+            
+            
+            
+            </div>
+
+        </div> <!-- cierra row -->
+    </div> <!-- cierra container -->
+</main>
+
+
+    <script src="script/finportafolio.js"></script> 
+</body>
+</html>

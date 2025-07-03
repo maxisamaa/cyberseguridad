@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+*{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 80;
+}
+header{
+    background-color:#172678;
+    color:rgb(255, 255, 255); /* header es una etiqueta de bloque como div por lo que usa todo el espacio  horizontal*/
+    padding: 20px; /* el pading le da grosor a la franja no es necesario darle height*/
+    display:flex; 
+    justify-content:space-between; /*pega lo primero y lo ultimo a los extremos*/
+    align-items: center;          /* h1 a la izquierda y nav a la derecha*/
+}
+
+.modal header{
+    border-radius: 10px;
+}
+nav ul{
+    display:flex;
+    list-style:none; /*le quita los puntitos del unorder list*/
+    align-items: center;  /* centrado vertical*/
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding:10px;
+    margin:10px;
+    margin-right: 40px;
+}
+
+header nav a{
+    color:rgb(255, 255, 255);
+    text-align: center; /* dispone del contenido en el interior del bloque*/
+    text-decoration: none; /*le quito el subrayado a los links con etiqueta <a>*/
+}
+header nav a:hover{
+    color: #8f8f8fad;
+}
+
+
+.imagen{
+    width: 120px;
+    height:150px;
+    top:35px;
+    left:65px;
+}
+
+
+.carousel-inner img {
+  height: 400px; /* o el valor que desees */
+  object-fit: cover; /* mantiene proporción y recorta exceso si es necesario */
+
+}
+
+/*-------*/
+.formularito{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    height: 75%;
+    margin: 70px auto;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: start;
+}
+h2 {
+    margin-top: 20px;
+}
+.modal { /*ocupa toda la pantalla*/
+    position: fixed; /*o fixed*/
+    z-index:1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+}
+.modal header {
+    margin-top: 10px ;
+    position: relative;
+}
+
+.modal main {
+    background-color: rgba(176, 236, 236,0.1);
+    width: auto;
+    height: auto;
+    font-size: 23px;
+    padding: 10px;
+}
+.modal main label{
+    display: inline;
+    margin-bottom: 5px;
+}
+.modal main div{
+    margin: 5px;
+    margin-bottom: 5px;
+}
+input{
+    border: solid rgb(219, 236, 238) 2px;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height:auto ;
+    border-radius: 5px;
+}
+.modal input{
+    width: 5%;
+}
+.botones-formulario{
+    text-align: center;
+    font-size: 20px;
+}
+.botones-formulario button{
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(34, 34, 225);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.botones-formulario button:hover{
+    background-color: rgb(120, 120, 217);
+}
+#tarjeta{
+    display: none;
+    margin-top: 30px;
+}
+
+#boton{
+    padding: 10px 15px;
+    background-color: rgb(74, 47, 225);
+    color: aliceblue;
+    border:none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin: 30px 40% ;
+}
+#boton:hover{
+    background-color: rgb(144, 130, 224);
+}
+
+.close{
+    position: absolute;
+    bottom: 60px;
+    right: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.test{ /*titulo*/
+    margin: 10px;
+    margin-top: 30px;
+}
+
+#testSeguridad{
+    font-size: 70%;
+}
